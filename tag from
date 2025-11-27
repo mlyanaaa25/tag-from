@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Isian Data Mahasiswa</title>
+</head>
+<body>
+    <h2>Form Isian Data Mahasiswa</h2>
+    <form action="/submit" method="post">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="nim">NIM:</label><br>
+        <input type="text" id="nim" name="nim" required><br><br>
+
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="4" cols="40" required></textarea><br><br>
+
+        <label for="jurusan">Jurusan:</label><br>
+        <input type="text" id="jurusan" name="jurusan" required><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="pria" name="jenis_kelamin" value="Pria" required>
+        <label for="pria">Pria</label><br>
+        <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita" required>
+        <label for="wanita">Wanita</label><br><br>
+
+        <label for="fakultas">Fakultas:</label><br>
+        <select id="fakultas" name="fakultas" required>
+            <option value="">--Pilih Fakultas--</option>
+            <option value="Teknik">Teknik</option>
+            <option value="Ekonomi">Ekonomi</option>
+            <option value="FISIP">FISIP</option>
+            <option value="Hukum">Hukum</option> 
+            <option value="matematika Murni">Matematika Murni</option>
+        </select><br><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
